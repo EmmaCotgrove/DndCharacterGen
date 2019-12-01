@@ -25,7 +25,7 @@ namespace DnDCharacterGen
             if (dndClass=="Fighter" || dndClass=="Monk" || dndClass =="Rogue" || dndClass == "Barbarian")
             {
                 Console.WriteLine("Basic");
-                BasicCreateForm basicCharacters = new BasicCreateForm(dndClass);
+                BasicCreateForm basicCharacters = new BasicCreateForm(dndClass, dndRace);
                 basicCharacters.Show();
             } else
             {

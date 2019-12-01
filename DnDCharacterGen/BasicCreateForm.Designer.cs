@@ -59,6 +59,7 @@
             this.HPLabel = new System.Windows.Forms.Label();
             this.otherInfoLbl = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.RaceLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -324,11 +325,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // RaceLabel
+            // 
+            this.RaceLabel.AutoSize = true;
+            this.RaceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RaceLabel.Location = new System.Drawing.Point(549, 28);
+            this.RaceLabel.Name = "RaceLabel";
+            this.RaceLabel.Size = new System.Drawing.Size(108, 31);
+            this.RaceLabel.TabIndex = 31;
+            this.RaceLabel.Text = "label12";
+            // 
             // BasicCreateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1043, 450);
+            this.Controls.Add(this.RaceLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.otherInfoLbl);
             this.Controls.Add(this.HPLabel);
@@ -409,5 +421,6 @@
         private System.Windows.Forms.Label HPLabel;
         private System.Windows.Forms.TextBox otherInfoLbl;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label RaceLabel;
     }
 }
