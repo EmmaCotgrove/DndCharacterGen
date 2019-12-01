@@ -42,7 +42,7 @@
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.ACNumeric = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
@@ -72,7 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ACNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             this.SuspendLayout();
             // 
@@ -197,12 +197,13 @@
             this.numericUpDown6.TabIndex = 13;
             this.numericUpDown6.ValueChanged += new System.EventHandler(this.numericUpDown6_ValueChanged);
             // 
-            // numericUpDown7
+            // ACNumeric
             // 
-            this.numericUpDown7.Location = new System.Drawing.Point(596, 116);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(79, 22);
-            this.numericUpDown7.TabIndex = 15;
+            this.ACNumeric.Location = new System.Drawing.Point(596, 116);
+            this.ACNumeric.Name = "ACNumeric";
+            this.ACNumeric.Size = new System.Drawing.Size(79, 22);
+            this.ACNumeric.TabIndex = 15;
+            this.ACNumeric.ValueChanged += new System.EventHandler(this.ACNumeric_ValueChanged);
             // 
             // label9
             // 
@@ -422,7 +423,7 @@
             this.Controls.Add(this.ClassLabel);
             this.Controls.Add(this.numericUpDown8);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.numericUpDown7);
+            this.Controls.Add(this.ACNumeric);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.numericUpDown6);
             this.Controls.Add(this.numericUpDown5);
@@ -447,7 +448,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ACNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -470,7 +471,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.NumericUpDown numericUpDown5;
         private System.Windows.Forms.NumericUpDown numericUpDown6;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.NumericUpDown ACNumeric;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.NumericUpDown numericUpDown8;
         private System.Windows.Forms.Label label10;

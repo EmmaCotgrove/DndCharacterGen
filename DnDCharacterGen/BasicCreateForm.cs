@@ -102,5 +102,13 @@ namespace DnDCharacterGen
         {
             changeMod(chaMod, numericUpDown6);
         }
+
+        private void ACNumeric_ValueChanged(object sender, EventArgs e)
+        {
+            if (ACNumeric.Value > 20)
+            {
+                ACNumeric.Value = 20;
+            }
+        }
     }
 }

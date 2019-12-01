@@ -24,12 +24,12 @@ namespace DnDCharacterGen
 
             if (dndClass=="Fighter" || dndClass=="Monk" || dndClass =="Rogue" || dndClass == "Barbarian")
             {
-                Console.WriteLine("Basic");
                 BasicCreateForm basicCharacters = new BasicCreateForm(dndClass, dndRace);
                 basicCharacters.Show();
             } else
             {
-                Console.WriteLine("Magic caster");
+                MagicCasterForm magicChars = new MagicCasterForm(dndClass, dndRace);
+                magicChars.Show();
             }
         }
 

@@ -9,3 +9,4 @@ C:\Users\Emma\Documents\01 Programming\C Sharp Projects\DnDCharacterGen\DnDChara
 C:\Users\Emma\Documents\01 Programming\C Sharp Projects\DnDCharacterGen\DnDCharacterGen\obj\Debug\DnDCharacterGen.exe
 C:\Users\Emma\Documents\01 Programming\C Sharp Projects\DnDCharacterGen\DnDCharacterGen\obj\Debug\DnDCharacterGen.pdb
 C:\Users\Emma\Documents\01 Programming\C Sharp Projects\DnDCharacterGen\DnDCharacterGen\obj\Debug\DnDCharacterGen.BasicCreateForm.resources
+C:\Users\Emma\Documents\01 Programming\C Sharp Projects\DnDCharacterGen\DnDCharacterGen\obj\Debug\DnDCharacterGen.MagicCasterForm.resources
