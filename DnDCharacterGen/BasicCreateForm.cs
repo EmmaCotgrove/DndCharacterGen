@@ -12,10 +12,11 @@ namespace DnDCharacterGen
 {
     public partial class BasicCreateForm : Form
     {
-        public BasicCreateForm(string dndClass)
+        public BasicCreateForm(string dndClass, string dndRace)
         {
             InitializeComponent();
             ClassLabel.Text = dndClass;
+            RaceLabel.Text = dndRace;
             if (dndClass == "Fighter")
             {
                 StrLabel.Text = "Add 1 to Str";
