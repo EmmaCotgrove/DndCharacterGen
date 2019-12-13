@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace DnDCharacterGen
 {
@@ -108,6 +109,31 @@ namespace DnDCharacterGen
             if (ACNumeric.Value > 20)
             {
                 ACNumeric.Value = 20;
+            }
+        }
+
+        private void SaveBtnBasic_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "Text File|*.txt";
+            if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string path = sfd.FileName;
+                BinaryWriter bw = new BinaryWriter(File.Create(path));
+                bw.Write($"Race: {RaceLabel.Text}\n");
+                bw.Write($"Class: {ClassLabel.Text}\n\n");
+
+                bw.Write($"Strength: {numericUpDown1.Value}, Modifier: {strMod.Text}\n");
+                bw.Write($"Dexterity: {numericUpDown2.Value}, Modifier: {dexMod.Text}\n");
+                bw.Write($"Constitution: {numericUpDown3.Value}, Modifier: {conMod.Text}\n");
+                bw.Write($"Wisdown: {numericUpDown4.Value}, Modifier: {wisMod.Text}\n");
+                bw.Write($"Intelligence: {numericUpDown5.Value}, Modifier: {intMod.Text}\n");
+                bw.Write($"Charisma: {numericUpDown6.Value}, Modifier: {chaMod.Text}\n\n");
+
+                bw.Write($"AC: {ACNumeric.Value}\n");
+                bw.Write($"Hit Points: {numericUpDown8.Value}\n");
+                bw.Write($"Hit Dice: {HitDiceBox.Text}\n");
+                bw.Dispose();
             }
         }
     }

@@ -71,6 +71,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.SaveBtnMagic = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ACNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
@@ -191,7 +192,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 32);
+            this.button1.Location = new System.Drawing.Point(27, 32);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 68;
@@ -477,11 +478,22 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Basic Stats and Modifiers";
             // 
+            // SaveBtnMagic
+            // 
+            this.SaveBtnMagic.Location = new System.Drawing.Point(27, 66);
+            this.SaveBtnMagic.Name = "SaveBtnMagic";
+            this.SaveBtnMagic.Size = new System.Drawing.Size(75, 23);
+            this.SaveBtnMagic.TabIndex = 87;
+            this.SaveBtnMagic.Text = "Save";
+            this.SaveBtnMagic.UseVisualStyleBackColor = true;
+            this.SaveBtnMagic.Click += new System.EventHandler(this.SaveBtnMagic_Click);
+            // 
             // MagicCasterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1285, 430);
+            this.Controls.Add(this.SaveBtnMagic);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.RaceLabel);
@@ -562,5 +574,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button SaveBtnMagic;
     }
 }

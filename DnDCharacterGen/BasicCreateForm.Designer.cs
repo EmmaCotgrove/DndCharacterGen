@@ -67,6 +67,7 @@
             this.IntLabel = new System.Windows.Forms.Label();
             this.ChaLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.SaveBtnBasic = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -431,11 +432,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Basic Stats and Modifiers";
             // 
+            // SaveBtnBasic
+            // 
+            this.SaveBtnBasic.Location = new System.Drawing.Point(25, 60);
+            this.SaveBtnBasic.Name = "SaveBtnBasic";
+            this.SaveBtnBasic.Size = new System.Drawing.Size(75, 23);
+            this.SaveBtnBasic.TabIndex = 45;
+            this.SaveBtnBasic.Text = "Save";
+            this.SaveBtnBasic.UseVisualStyleBackColor = true;
+            this.SaveBtnBasic.Click += new System.EventHandler(this.SaveBtnBasic_Click);
+            // 
             // BasicCreateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1324, 450);
+            this.Controls.Add(this.SaveBtnBasic);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.RaceLabel);
             this.Controls.Add(this.button1);
@@ -510,5 +522,6 @@
         private System.Windows.Forms.Label IntLabel;
         private System.Windows.Forms.Label ChaLabel;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button SaveBtnBasic;
     }
 }
