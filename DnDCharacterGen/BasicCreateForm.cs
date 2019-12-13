@@ -70,8 +70,14 @@ namespace DnDCharacterGen
             int strMod = Convert.ToInt32(numericMod.Value);
             if (strMod > 20) { numericMod.Value = 20; strMod = 20; }
             int modifier;
-            if (strMod > 10) { modifier = (strMod - 10) / 2; } else { modifier = 0; }
-            label.Text = ("+"+modifier.ToString());
+
+            modifier = (strMod - 10) / 2;
+            if (strMod >= 9) 
+            {     
+                label.Text = ("+" + modifier.ToString());
+            } else { 
+                label.Text = (modifier.ToString());
+            }
         }
 
         private void strMod_Click(object sender, EventArgs e)
@@ -119,21 +125,27 @@ namespace DnDCharacterGen
             if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string path = sfd.FileName;
-                BinaryWriter bw = new BinaryWriter(File.Create(path));
-                bw.Write($"Race: {RaceLabel.Text}\n");
-                bw.Write($"Class: {ClassLabel.Text}\n\n");
+                using (StreamWriter sw = new StreamWriter(path))
+                {
+                    sw.WriteLine($"Race: {RaceLabel.Text}\n");
+                    sw.Write($"Race: {RaceLabel.Text}\n");
+                    sw.Write($"Class: {ClassLabel.Text}\n\n");
 
-                bw.Write($"Strength: {numericUpDown1.Value}, Modifier: {strMod.Text}\n");
-                bw.Write($"Dexterity: {numericUpDown2.Value}, Modifier: {dexMod.Text}\n");
-                bw.Write($"Constitution: {numericUpDown3.Value}, Modifier: {conMod.Text}\n");
-                bw.Write($"Wisdown: {numericUpDown4.Value}, Modifier: {wisMod.Text}\n");
-                bw.Write($"Intelligence: {numericUpDown5.Value}, Modifier: {intMod.Text}\n");
-                bw.Write($"Charisma: {numericUpDown6.Value}, Modifier: {chaMod.Text}\n\n");
+                    sw.Write($"Strength: {numericUpDown1.Value}, Modifier: {strMod.Text}\n");
+                    sw.Write($"Dexterity: {numericUpDown2.Value}, Modifier: {dexMod.Text}\n");
+                    sw.Write($"Constitution: {numericUpDown3.Value}, Modifier: {conMod.Text}\n");
+                    sw.Write($"Wisdown: {numericUpDown4.Value}, Modifier: {wisMod.Text}\n");
+                    sw.Write($"Intelligence: {numericUpDown5.Value}, Modifier: {intMod.Text}\n");
+                    sw.Write($"Charisma: {numericUpDown6.Value}, Modifier: {chaMod.Text}\n\n");
 
-                bw.Write($"AC: {ACNumeric.Value}\n");
-                bw.Write($"Hit Points: {numericUpDown8.Value}\n");
-                bw.Write($"Hit Dice: {HitDiceBox.Text}\n");
-                bw.Dispose();
+                    sw.Write($"AC: {ACNumeric.Value}\n");
+                    sw.Write($"Hit Points: {numericUpDown8.Value}\n");
+                    sw.Write($"Hit Dice: {HitDiceBox.Text}\n");
+
+                    sw.Write($"Other Information\n {otherInfoLbl.Text}");
+                    sw.Dispose();
+                }
+
             }
         }
     }

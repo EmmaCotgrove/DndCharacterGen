@@ -1,14 +1,15 @@
+Race: Half Orc
+Class: Barbarian
 
-Race: Elf
-Class: Monk
-
-Strength: 14, Modifier: +2
-Dexterity: 16, Modifier: +3
-Constitution: 13, Modifier: +1
-Wisdown: 12, Modifier: +1
-Intelligence: 15, Modifier: +2
-Charisma: 5, Modifier: +0
+Strength: 15, Modifier: +2
+Dexterity: 12, Modifier: +1
+Constitution: 17, Modifier: +3
+Wisdown: 9, Modifier: +0
+Intelligence: 8, Modifier: --1
+Charisma: 9, Modifier: +0
 
 AC: 14
-Hit Points: 20
-Hit Dice: 1d8
+Hit Points: 40
+Hit Dice: 1d12
+—Other Information
+ Level 1: Rage: You can enter a rage as a bonus action. Whilst raging you have advantage on STR saving throws and STR checks. Resistance to bludgeoning, piercing and slashing damage. When you attack with STR you gain bonus to damage roll as per barbarian table.
