@@ -72,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewCharacter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCharacter.Designer.cs">
+      <DependentUpon>ViewCharacter.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BasicCreateForm.resx">
       <DependentUpon>BasicCreateForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +99,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ViewCharacter.resx">
+      <DependentUpon>ViewCharacter.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.ViewChaBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,11 +65,22 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // ViewChaBtn
+            // 
+            this.ViewChaBtn.Location = new System.Drawing.Point(253, 194);
+            this.ViewChaBtn.Name = "ViewChaBtn";
+            this.ViewChaBtn.Size = new System.Drawing.Size(129, 57);
+            this.ViewChaBtn.TabIndex = 3;
+            this.ViewChaBtn.Text = "View Character";
+            this.ViewChaBtn.UseVisualStyleBackColor = true;
+            this.ViewChaBtn.Click += new System.EventHandler(this.ViewChaBtn_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ViewChaBtn);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -84,6 +96,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ViewChaBtn;
     }
 }
 

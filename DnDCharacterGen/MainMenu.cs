@@ -27,5 +27,11 @@ namespace DnDCharacterGen
             Create c = new Create();
             c.Show();
         }
+
+        private void ViewChaBtn_Click(object sender, EventArgs e)
+        {
+            ViewCharacter vc = new ViewCharacter();
+            vc.Show();
+        }
     }
 }
