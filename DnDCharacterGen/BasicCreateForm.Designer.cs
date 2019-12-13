@@ -91,7 +91,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 286);
+            this.label2.Location = new System.Drawing.Point(30, 286);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(355, 17);
             this.label2.TabIndex = 1;
@@ -236,7 +236,7 @@
             // 
             this.ClassLabel.AutoSize = true;
             this.ClassLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClassLabel.Location = new System.Drawing.Point(418, 64);
+            this.ClassLabel.Location = new System.Drawing.Point(419, 64);
             this.ClassLabel.Name = "ClassLabel";
             this.ClassLabel.Size = new System.Drawing.Size(108, 31);
             this.ClassLabel.TabIndex = 18;
@@ -276,10 +276,10 @@
             // 
             // otherInfoLbl
             // 
-            this.otherInfoLbl.Location = new System.Drawing.Point(54, 320);
+            this.otherInfoLbl.Location = new System.Drawing.Point(29, 320);
             this.otherInfoLbl.Multiline = true;
             this.otherInfoLbl.Name = "otherInfoLbl";
-            this.otherInfoLbl.Size = new System.Drawing.Size(1233, 83);
+            this.otherInfoLbl.Size = new System.Drawing.Size(1267, 83);
             this.otherInfoLbl.TabIndex = 29;
             // 
             // button1
