@@ -22,6 +22,8 @@ namespace DnDCharacterGen
             BardCantrips2.Hide();
             BardL1_1.Hide();
             BardL1_2.Hide();
+            BardL1_3.Hide();
+            BardL1_4.Hide();
             ClericCantrips.Hide();
             ClericCantrips2.Hide();
             ClericCantrips3.Hide();
@@ -31,11 +33,21 @@ namespace DnDCharacterGen
             DruidCantrips2.Hide();
             DruidL1_1.Hide();
             DruidL1_2.Hide();
+            SorcererCantrips.Hide();
+            SorcererCantrips2.Hide();
+            SorcererCantrips3.Hide();
+            SorcererCantrips4.Hide();
+            SorcererL1_1.Hide();
+            SorcererL1_2.Hide();
+            WarlockCantrips.Hide();
+            WarlockCantrips2.Hide();
             
             if (dndClass=="Bard")
             {
                 BardL1_2.Show();
                 BardL1_1.Show();
+                BardL1_3.Show();
+                BardL1_4.Show();
                 BardCantrips.Show();
                 BardCantrips2.Show();
                 HitDiceBox.Text = "1d8";
@@ -78,6 +90,27 @@ namespace DnDCharacterGen
                     "When foraging you gain twice as much. While tracking creatures you know the exact number and sizes. Difficult terrain does not " +
                     "slow the group. No spells at Level 1";
                 SpellSaveDCINFO.Text = "8 + Proficiency Modifier + Wisdom Modifier";
+            } else if (dndClass == "Sorcerer")
+            {
+                SorcererCantrips.Show();
+                SorcererCantrips2.Show();
+                SorcererCantrips3.Show();
+                SorcererCantrips4.Show();
+                SorcererL1_1.Show();
+                SorcererL1_2.Show();
+                HitDiceBox.Text = "1d6";
+                otherInfoLbl.Text = "Choose a sorcerous origin: Draconic, Bloodline or Wild Magic.";
+                SpellSaveDCINFO.Text = "8 + Proficiency Modifier + Charisma Modifier";
+            } else if (dndClass == "Warlock")
+            {
+                WarlockCantrips.Show();
+                WarlockCantrips2.Show();
+                WarlockL1_1.Show();
+                WarlockL1_2.Show();
+                HitDiceBox.Text = "1d8";
+                otherInfoLbl.Text = "Otherwordly Patron: Choose who you strike a bargain with to gain additional features: Archfey, Fiend or " +
+                    "the Great Old One. Pact Magic.";
+                SpellSaveDCINFO.Text = "8 + Proficiency Modifier + Charisma Modifier";
             }
         }
 

@@ -92,6 +92,18 @@
             this.DruidCantrips2 = new System.Windows.Forms.ComboBox();
             this.DruidL1_1 = new System.Windows.Forms.ComboBox();
             this.DruidL1_2 = new System.Windows.Forms.ComboBox();
+            this.SorcererCantrips = new System.Windows.Forms.ComboBox();
+            this.SorcererCantrips2 = new System.Windows.Forms.ComboBox();
+            this.SorcererCantrips3 = new System.Windows.Forms.ComboBox();
+            this.SorcererCantrips4 = new System.Windows.Forms.ComboBox();
+            this.SorcererL1_1 = new System.Windows.Forms.ComboBox();
+            this.SorcererL1_2 = new System.Windows.Forms.ComboBox();
+            this.BardL1_3 = new System.Windows.Forms.ComboBox();
+            this.BardL1_4 = new System.Windows.Forms.ComboBox();
+            this.WarlockCantrips = new System.Windows.Forms.ComboBox();
+            this.WarlockCantrips2 = new System.Windows.Forms.ComboBox();
+            this.WarlockL1_1 = new System.Windows.Forms.ComboBox();
+            this.WarlockL1_2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ACNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
@@ -458,12 +470,21 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.WarlockL1_2);
+            this.groupBox1.Controls.Add(this.WarlockL1_1);
+            this.groupBox1.Controls.Add(this.WarlockCantrips2);
+            this.groupBox1.Controls.Add(this.WarlockCantrips);
+            this.groupBox1.Controls.Add(this.BardL1_4);
+            this.groupBox1.Controls.Add(this.BardL1_3);
+            this.groupBox1.Controls.Add(this.SorcererL1_2);
+            this.groupBox1.Controls.Add(this.SorcererCantrips4);
+            this.groupBox1.Controls.Add(this.SorcererCantrips3);
+            this.groupBox1.Controls.Add(this.SorcererCantrips2);
+            this.groupBox1.Controls.Add(this.SorcererCantrips);
             this.groupBox1.Controls.Add(this.DruidL1_2);
-            this.groupBox1.Controls.Add(this.DruidL1_1);
             this.groupBox1.Controls.Add(this.DruidCantrips2);
             this.groupBox1.Controls.Add(this.DruidCantrips);
             this.groupBox1.Controls.Add(this.ClericL1_2);
-            this.groupBox1.Controls.Add(this.ClericL1_1);
             this.groupBox1.Controls.Add(this.ClericCantrips3);
             this.groupBox1.Controls.Add(this.ClericCantrips2);
             this.groupBox1.Controls.Add(this.ClericCantrips);
@@ -474,6 +495,9 @@
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.SorcererL1_1);
+            this.groupBox1.Controls.Add(this.DruidL1_1);
+            this.groupBox1.Controls.Add(this.ClericL1_1);
             this.groupBox1.Location = new System.Drawing.Point(518, 252);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(678, 229);
@@ -861,6 +885,300 @@
             this.DruidL1_2.Size = new System.Drawing.Size(224, 24);
             this.DruidL1_2.TabIndex = 102;
             // 
+            // SorcererCantrips
+            // 
+            this.SorcererCantrips.FormattingEnabled = true;
+            this.SorcererCantrips.Items.AddRange(new object[] {
+            "Acid Splash",
+            "Blade Ward",
+            "Chill Touch",
+            "Dancing Lights",
+            "Fire Bolt",
+            "Friends ",
+            "Light",
+            "Mage Hand",
+            "Mending",
+            "Message",
+            "Minor Illusion",
+            "Poison Spray",
+            "Prestidigitation",
+            "Ray of Frost",
+            "Shocking Grasp",
+            "True Strike"});
+            this.SorcererCantrips.Location = new System.Drawing.Point(23, 78);
+            this.SorcererCantrips.Name = "SorcererCantrips";
+            this.SorcererCantrips.Size = new System.Drawing.Size(224, 24);
+            this.SorcererCantrips.TabIndex = 103;
+            // 
+            // SorcererCantrips2
+            // 
+            this.SorcererCantrips2.FormattingEnabled = true;
+            this.SorcererCantrips2.Items.AddRange(new object[] {
+            "Acid Splash",
+            "Blade Ward",
+            "Chill Touch",
+            "Dancing Lights",
+            "Fire Bolt",
+            "Friends ",
+            "Light",
+            "Mage Hand",
+            "Mending",
+            "Message",
+            "Minor Illusion",
+            "Poison Spray",
+            "Prestidigitation",
+            "Ray of Frost",
+            "Shocking Grasp",
+            "True Strike"});
+            this.SorcererCantrips2.Location = new System.Drawing.Point(23, 108);
+            this.SorcererCantrips2.Name = "SorcererCantrips2";
+            this.SorcererCantrips2.Size = new System.Drawing.Size(224, 24);
+            this.SorcererCantrips2.TabIndex = 104;
+            // 
+            // SorcererCantrips3
+            // 
+            this.SorcererCantrips3.FormattingEnabled = true;
+            this.SorcererCantrips3.Items.AddRange(new object[] {
+            "Acid Splash",
+            "Blade Ward",
+            "Chill Touch",
+            "Dancing Lights",
+            "Fire Bolt",
+            "Friends ",
+            "Light",
+            "Mage Hand",
+            "Mending",
+            "Message",
+            "Minor Illusion",
+            "Poison Spray",
+            "Prestidigitation",
+            "Ray of Frost",
+            "Shocking Grasp",
+            "True Strike"});
+            this.SorcererCantrips3.Location = new System.Drawing.Point(23, 138);
+            this.SorcererCantrips3.Name = "SorcererCantrips3";
+            this.SorcererCantrips3.Size = new System.Drawing.Size(224, 24);
+            this.SorcererCantrips3.TabIndex = 105;
+            // 
+            // SorcererCantrips4
+            // 
+            this.SorcererCantrips4.FormattingEnabled = true;
+            this.SorcererCantrips4.Items.AddRange(new object[] {
+            "Acid Splash",
+            "Blade Ward",
+            "Chill Touch",
+            "Dancing Lights",
+            "Fire Bolt",
+            "Friends ",
+            "Light",
+            "Mage Hand",
+            "Mending",
+            "Message",
+            "Minor Illusion",
+            "Poison Spray",
+            "Prestidigitation",
+            "Ray of Frost",
+            "Shocking Grasp",
+            "True Strike"});
+            this.SorcererCantrips4.Location = new System.Drawing.Point(23, 168);
+            this.SorcererCantrips4.Name = "SorcererCantrips4";
+            this.SorcererCantrips4.Size = new System.Drawing.Size(224, 24);
+            this.SorcererCantrips4.TabIndex = 106;
+            // 
+            // SorcererL1_1
+            // 
+            this.SorcererL1_1.FormattingEnabled = true;
+            this.SorcererL1_1.Items.AddRange(new object[] {
+            "Burning Hands",
+            "Charm Person",
+            "Chromatic Orb",
+            "Colour Spray",
+            "Comprehend Languages",
+            "Detect Magic",
+            "Disguise Self",
+            "Expeditious Retreat",
+            "False Life",
+            "Feather Fall",
+            "Fog Cloud",
+            "Jump",
+            "Mage Armour",
+            "Magic Missile",
+            "Ray of Sickness",
+            "Shield",
+            "Silent Image",
+            "Sleep",
+            "Thunderwave",
+            "Witch Bolt"});
+            this.SorcererL1_1.Location = new System.Drawing.Point(350, 78);
+            this.SorcererL1_1.Name = "SorcererL1_1";
+            this.SorcererL1_1.Size = new System.Drawing.Size(224, 24);
+            this.SorcererL1_1.TabIndex = 107;
+            // 
+            // SorcererL1_2
+            // 
+            this.SorcererL1_2.FormattingEnabled = true;
+            this.SorcererL1_2.Items.AddRange(new object[] {
+            "Burning Hands",
+            "Charm Person",
+            "Chromatic Orb",
+            "Colour Spray",
+            "Comprehend Languages",
+            "Detect Magic",
+            "Disguise Self",
+            "Expeditious Retreat",
+            "False Life",
+            "Feather Fall",
+            "Fog Cloud",
+            "Jump",
+            "Mage Armour",
+            "Magic Missile",
+            "Ray of Sickness",
+            "Shield",
+            "Silent Image",
+            "Sleep",
+            "Thunderwave",
+            "Witch Bolt"});
+            this.SorcererL1_2.Location = new System.Drawing.Point(350, 108);
+            this.SorcererL1_2.Name = "SorcererL1_2";
+            this.SorcererL1_2.Size = new System.Drawing.Size(224, 24);
+            this.SorcererL1_2.TabIndex = 108;
+            // 
+            // BardL1_3
+            // 
+            this.BardL1_3.FormattingEnabled = true;
+            this.BardL1_3.Items.AddRange(new object[] {
+            "Animal Friendship",
+            "Bane",
+            "Charm Person",
+            "Comprehend Languages",
+            "Cure Wounds",
+            "Detect Magic",
+            "Disguise Self",
+            "Dissonant Whispers",
+            "Faerie Fire",
+            "Feather Fall",
+            "Healing Word",
+            "Heroism",
+            "Identify",
+            "Illusory Script",
+            "Longstrider",
+            "Silent Image",
+            "Sleep",
+            "Speak with Animals",
+            "Tasha\'s Hideous Laughter",
+            "Thunderwave",
+            "Unseen Servant"});
+            this.BardL1_3.Location = new System.Drawing.Point(350, 138);
+            this.BardL1_3.Name = "BardL1_3";
+            this.BardL1_3.Size = new System.Drawing.Size(224, 24);
+            this.BardL1_3.TabIndex = 109;
+            // 
+            // BardL1_4
+            // 
+            this.BardL1_4.FormattingEnabled = true;
+            this.BardL1_4.Items.AddRange(new object[] {
+            "Animal Friendship",
+            "Bane",
+            "Charm Person",
+            "Comprehend Languages",
+            "Cure Wounds",
+            "Detect Magic",
+            "Disguise Self",
+            "Dissonant Whispers",
+            "Faerie Fire",
+            "Feather Fall",
+            "Healing Word",
+            "Heroism",
+            "Identify",
+            "Illusory Script",
+            "Longstrider",
+            "Silent Image",
+            "Sleep",
+            "Speak with Animals",
+            "Tasha\'s Hideous Laughter",
+            "Thunderwave",
+            "Unseen Servant"});
+            this.BardL1_4.Location = new System.Drawing.Point(350, 168);
+            this.BardL1_4.Name = "BardL1_4";
+            this.BardL1_4.Size = new System.Drawing.Size(224, 24);
+            this.BardL1_4.TabIndex = 110;
+            // 
+            // WarlockCantrips
+            // 
+            this.WarlockCantrips.FormattingEnabled = true;
+            this.WarlockCantrips.Items.AddRange(new object[] {
+            "Blade Ward",
+            "Chill Touch",
+            "Eldritch Blast",
+            "Friends",
+            "Mage Hand",
+            "Minor Illusion",
+            "Poison Spray",
+            "Prestidigitation",
+            "True Strike"});
+            this.WarlockCantrips.Location = new System.Drawing.Point(23, 78);
+            this.WarlockCantrips.Name = "WarlockCantrips";
+            this.WarlockCantrips.Size = new System.Drawing.Size(224, 24);
+            this.WarlockCantrips.TabIndex = 111;
+            // 
+            // WarlockCantrips2
+            // 
+            this.WarlockCantrips2.FormattingEnabled = true;
+            this.WarlockCantrips2.Items.AddRange(new object[] {
+            "Blade Ward",
+            "Chill Touch",
+            "Eldritch Blast",
+            "Friends",
+            "Mage Hand",
+            "Minor Illusion",
+            "Poison Spray",
+            "Prestidigitation",
+            "True Strike"});
+            this.WarlockCantrips2.Location = new System.Drawing.Point(23, 108);
+            this.WarlockCantrips2.Name = "WarlockCantrips2";
+            this.WarlockCantrips2.Size = new System.Drawing.Size(224, 24);
+            this.WarlockCantrips2.TabIndex = 112;
+            // 
+            // WarlockL1_1
+            // 
+            this.WarlockL1_1.FormattingEnabled = true;
+            this.WarlockL1_1.Items.AddRange(new object[] {
+            "Armour of Agathys",
+            "Arms of Hadar",
+            "Charm Person",
+            "Comprehend Languages",
+            "Expeditious Retreat",
+            "Hellish Rebuke",
+            "Hex",
+            "Illusory Script",
+            "Protection from Evil and Good",
+            "Unseen Servant",
+            "Witch Bold"});
+            this.WarlockL1_1.Location = new System.Drawing.Point(350, 78);
+            this.WarlockL1_1.Name = "WarlockL1_1";
+            this.WarlockL1_1.Size = new System.Drawing.Size(224, 24);
+            this.WarlockL1_1.TabIndex = 113;
+            // 
+            // WarlockL1_2
+            // 
+            this.WarlockL1_2.FormattingEnabled = true;
+            this.WarlockL1_2.Items.AddRange(new object[] {
+            "Armour of Agathys",
+            "Arms of Hadar",
+            "Charm Person",
+            "Comprehend Languages",
+            "Expeditious Retreat",
+            "Hellish Rebuke",
+            "Hex",
+            "Illusory Script",
+            "Protection from Evil and Good",
+            "Unseen Servant",
+            "Witch Bold"});
+            this.WarlockL1_2.Location = new System.Drawing.Point(350, 108);
+            this.WarlockL1_2.Name = "WarlockL1_2";
+            this.WarlockL1_2.Size = new System.Drawing.Size(224, 24);
+            this.WarlockL1_2.TabIndex = 114;
+            // 
             // MagicCasterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -977,5 +1295,17 @@
         private System.Windows.Forms.ComboBox DruidCantrips;
         private System.Windows.Forms.ComboBox DruidL1_2;
         private System.Windows.Forms.ComboBox DruidL1_1;
+        private System.Windows.Forms.ComboBox SorcererCantrips4;
+        private System.Windows.Forms.ComboBox SorcererCantrips3;
+        private System.Windows.Forms.ComboBox SorcererCantrips2;
+        private System.Windows.Forms.ComboBox SorcererCantrips;
+        private System.Windows.Forms.ComboBox SorcererL1_2;
+        private System.Windows.Forms.ComboBox SorcererL1_1;
+        private System.Windows.Forms.ComboBox BardL1_4;
+        private System.Windows.Forms.ComboBox BardL1_3;
+        private System.Windows.Forms.ComboBox WarlockCantrips2;
+        private System.Windows.Forms.ComboBox WarlockCantrips;
+        private System.Windows.Forms.ComboBox WarlockL1_2;
+        private System.Windows.Forms.ComboBox WarlockL1_1;
     }
 }
