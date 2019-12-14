@@ -1,0 +1,29 @@
+Character name: Nox
+Race: Tiefling
+Class: Bard
+
+Strength: 14, Modifier: +2
+Dexterity: 11, Modifier: +0
+Constitution: 10, Modifier: +0
+Wisdown: 14, Modifier: +2
+Intelligence: 13, Modifier: +1
+Charisma: 17, Modifier: +3
+
+AC: 16
+Hit Points: 24
+Hit Dice: 1d8
+
+Spell Caster Stats:
+Spell Save DC: 14
+ Spell Attack Modifier: 5
+
+Spell List
+Cantrips: 
+Dancing Lights
+Message
+Level 1: 
+Animal Friendship
+Identify
+
+Other Information
+ Start with Spellcasting. Bardic Inspiration: Use a bonus action to inspire another creature within 60 feet. That creaturegains 1d6 inspiration die. This lasts 10 mins, and can be added to one ability check, attack roll or saving throw. The creature canwait until after it rolls the d20 but before the DM announces the result.

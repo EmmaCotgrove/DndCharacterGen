@@ -82,6 +82,12 @@
             this.SpellSaveDCNum = new System.Windows.Forms.NumericUpDown();
             this.SpellAttkModNum = new System.Windows.Forms.NumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
+            this.SpellSaveDCINFO = new System.Windows.Forms.Label();
+            this.ClericCantrips = new System.Windows.Forms.ComboBox();
+            this.ClericCantrips2 = new System.Windows.Forms.ComboBox();
+            this.ClericCantrips3 = new System.Windows.Forms.ComboBox();
+            this.ClericL1_1 = new System.Windows.Forms.ComboBox();
+            this.ClericL1_2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ACNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
@@ -448,6 +454,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.ClericL1_2);
+            this.groupBox1.Controls.Add(this.ClericL1_1);
+            this.groupBox1.Controls.Add(this.ClericCantrips3);
+            this.groupBox1.Controls.Add(this.ClericCantrips2);
+            this.groupBox1.Controls.Add(this.ClericCantrips);
             this.groupBox1.Controls.Add(this.BardL1_2);
             this.groupBox1.Controls.Add(this.BardL1_1);
             this.groupBox1.Controls.Add(this.BardCantrips2);
@@ -623,7 +634,7 @@
             // SpellSaveDC
             // 
             this.SpellSaveDC.AutoSize = true;
-            this.SpellSaveDC.Location = new System.Drawing.Point(865, 157);
+            this.SpellSaveDC.Location = new System.Drawing.Point(819, 157);
             this.SpellSaveDC.Name = "SpellSaveDC";
             this.SpellSaveDC.Size = new System.Drawing.Size(98, 17);
             this.SpellSaveDC.TabIndex = 94;
@@ -631,15 +642,15 @@
             // 
             // SpellSaveDCNum
             // 
-            this.SpellSaveDCNum.Location = new System.Drawing.Point(1013, 155);
+            this.SpellSaveDCNum.Location = new System.Drawing.Point(967, 155);
             this.SpellSaveDCNum.Name = "SpellSaveDCNum";
             this.SpellSaveDCNum.Size = new System.Drawing.Size(79, 22);
             this.SpellSaveDCNum.TabIndex = 95;
-            this.SpellSaveDCNum.ValueChanged += new System.EventHandler(this.ACNumeric_ValueChanged);
+            this.SpellSaveDCNum.ValueChanged += new System.EventHandler(this.SpellSaveDCNum_ValueChanged);
             // 
             // SpellAttkModNum
             // 
-            this.SpellAttkModNum.Location = new System.Drawing.Point(1013, 187);
+            this.SpellAttkModNum.Location = new System.Drawing.Point(967, 187);
             this.SpellAttkModNum.Name = "SpellAttkModNum";
             this.SpellAttkModNum.Size = new System.Drawing.Size(79, 22);
             this.SpellAttkModNum.TabIndex = 97;
@@ -648,17 +659,122 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(865, 189);
+            this.label15.Location = new System.Drawing.Point(819, 189);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(136, 17);
             this.label15.TabIndex = 96;
             this.label15.Text = "Spell Attack Modifier";
             // 
+            // SpellSaveDCINFO
+            // 
+            this.SpellSaveDCINFO.AutoSize = true;
+            this.SpellSaveDCINFO.Location = new System.Drawing.Point(1066, 157);
+            this.SpellSaveDCINFO.Name = "SpellSaveDCINFO";
+            this.SpellSaveDCINFO.Size = new System.Drawing.Size(0, 17);
+            this.SpellSaveDCINFO.TabIndex = 98;
+            // 
+            // ClericCantrips
+            // 
+            this.ClericCantrips.FormattingEnabled = true;
+            this.ClericCantrips.Items.AddRange(new object[] {
+            "Guidance",
+            "Light",
+            "Mending",
+            "Resistance",
+            "Sacred Flame",
+            "Spare the Dying",
+            "Thaumaturgy"});
+            this.ClericCantrips.Location = new System.Drawing.Point(23, 78);
+            this.ClericCantrips.Name = "ClericCantrips";
+            this.ClericCantrips.Size = new System.Drawing.Size(224, 24);
+            this.ClericCantrips.TabIndex = 94;
+            // 
+            // ClericCantrips2
+            // 
+            this.ClericCantrips2.FormattingEnabled = true;
+            this.ClericCantrips2.Items.AddRange(new object[] {
+            "Guidance",
+            "Light",
+            "Mending",
+            "Resistance",
+            "Sacred Flame",
+            "Spare the Dying",
+            "Thaumaturgy"});
+            this.ClericCantrips2.Location = new System.Drawing.Point(23, 108);
+            this.ClericCantrips2.Name = "ClericCantrips2";
+            this.ClericCantrips2.Size = new System.Drawing.Size(224, 24);
+            this.ClericCantrips2.TabIndex = 95;
+            // 
+            // ClericCantrips3
+            // 
+            this.ClericCantrips3.FormattingEnabled = true;
+            this.ClericCantrips3.Items.AddRange(new object[] {
+            "Guidance",
+            "Light",
+            "Mending",
+            "Resistance",
+            "Sacred Flame",
+            "Spare the Dying",
+            "Thaumaturgy"});
+            this.ClericCantrips3.Location = new System.Drawing.Point(23, 138);
+            this.ClericCantrips3.Name = "ClericCantrips3";
+            this.ClericCantrips3.Size = new System.Drawing.Size(224, 24);
+            this.ClericCantrips3.TabIndex = 96;
+            // 
+            // ClericL1_1
+            // 
+            this.ClericL1_1.FormattingEnabled = true;
+            this.ClericL1_1.Items.AddRange(new object[] {
+            "Bane",
+            "Bless",
+            "Command",
+            "Create or Destroy Water",
+            "Cure Wounds",
+            "Detect Good and Evil",
+            "Detect Magic",
+            "Detect Poison and Disease",
+            "Guiding Bolt",
+            "Healing Wounds",
+            "Inflict Wounds",
+            "Protection from Good and Evil",
+            "Purify Food and Drink",
+            "Sanctuary",
+            "Shield of Faith"});
+            this.ClericL1_1.Location = new System.Drawing.Point(350, 78);
+            this.ClericL1_1.Name = "ClericL1_1";
+            this.ClericL1_1.Size = new System.Drawing.Size(224, 24);
+            this.ClericL1_1.TabIndex = 97;
+            // 
+            // ClericL1_2
+            // 
+            this.ClericL1_2.FormattingEnabled = true;
+            this.ClericL1_2.Items.AddRange(new object[] {
+            "Bane",
+            "Bless",
+            "Command",
+            "Create or Destroy Water",
+            "Cure Wounds",
+            "Detect Good and Evil",
+            "Detect Magic",
+            "Detect Poison and Disease",
+            "Guiding Bolt",
+            "Healing Wounds",
+            "Inflict Wounds",
+            "Protection from Good and Evil",
+            "Purify Food and Drink",
+            "Sanctuary",
+            "Shield of Faith"});
+            this.ClericL1_2.Location = new System.Drawing.Point(350, 108);
+            this.ClericL1_2.Name = "ClericL1_2";
+            this.ClericL1_2.Size = new System.Drawing.Size(224, 24);
+            this.ClericL1_2.TabIndex = 98;
+            // 
             // MagicCasterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1285, 508);
+            this.ClientSize = new System.Drawing.Size(1364, 508);
+            this.Controls.Add(this.SpellSaveDCINFO);
             this.Controls.Add(this.SpellAttkModNum);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.SpellSaveDCNum);
@@ -759,5 +875,11 @@
         private System.Windows.Forms.NumericUpDown SpellSaveDCNum;
         private System.Windows.Forms.NumericUpDown SpellAttkModNum;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label SpellSaveDCINFO;
+        private System.Windows.Forms.ComboBox ClericCantrips3;
+        private System.Windows.Forms.ComboBox ClericCantrips2;
+        private System.Windows.Forms.ComboBox ClericCantrips;
+        private System.Windows.Forms.ComboBox ClericL1_2;
+        private System.Windows.Forms.ComboBox ClericL1_1;
     }
 }

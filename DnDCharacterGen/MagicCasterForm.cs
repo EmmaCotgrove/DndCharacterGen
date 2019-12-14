@@ -22,6 +22,11 @@ namespace DnDCharacterGen
             BardCantrips2.Hide();
             BardL1_1.Hide();
             BardL1_2.Hide();
+            ClericCantrips.Hide();
+            ClericCantrips2.Hide();
+            ClericCantrips3.Hide();
+            ClericL1_1.Hide();
+            ClericL1_2.Hide();
             
             if (dndClass=="Bard")
             {
@@ -30,6 +35,21 @@ namespace DnDCharacterGen
                 BardCantrips.Show();
                 BardCantrips2.Show();
                 HitDiceBox.Text = "1d8";
+                otherInfoLbl.Text = "Start with Spellcasting. Bardic Inspiration: Use a bonus action to inspire another creature within 60 feet. That creature" +
+                    "gains 1d6 inspiration die. This lasts 10 mins, and can be added to one ability check, attack roll or saving throw. The creature can" +
+                    "wait until after it rolls the d20 but before the DM announces the result.";
+                SpellSaveDCINFO.Text = "8 + Proficiency Modifier + Charisma Modifier";
+            } else if (dndClass == "Cleric")
+            {
+                ClericCantrips.Show();
+                ClericCantrips2.Show();
+                ClericCantrips3.Show();
+                ClericL1_1.Show();
+                ClericL1_2.Show();
+                HitDiceBox.Text = "1d8";
+                otherInfoLbl.Text = "Start with Spellcasting. Divine Domain: Choose a domain linked to your Deity which grants domain spells and " +
+                    "other features";
+                SpellSaveDCINFO.Text = "8 + Proficiency Modifier + Wisdom Modifier";
             }
         }
 
@@ -118,12 +138,12 @@ namespace DnDCharacterGen
                     sw.Write($"Hit Dice: {HitDiceBox.Text}\n\n");
 
                     sw.Write($"Spell Caster Stats:\n");
-                    sw.Write($"Spell Save DC: {SpellSaveDCNum}\n Spell Attack Modifier: {SpellAttkModNum}");
+                    sw.Write($"Spell Save DC: {SpellSaveDCNum.Value}\n Spell Attack Modifier: {SpellAttkModNum.Value}\n\n");
                     sw.Write("Spell List\n");
                     if (ClassLabel.Text=="Bard")
                     {
                         sw.Write($"Cantrips: \n{BardCantrips.Text}\n{BardCantrips2.Text}\n");
-                        sw.Write($"Level 1: \n{BardL1_1.Text}\n{BardL1_2.Text}\n");
+                        sw.Write($"Level 1: \n{BardL1_1.Text}\n{BardL1_2.Text}\n\n");
                     }
 
                     sw.Write($"Other Information\n {otherInfoLbl.Text}");
@@ -137,6 +157,14 @@ namespace DnDCharacterGen
             if (SpellAttkModNum.Value > 10)
             {
                 SpellAttkModNum.Value = 10;
+            }
+        }
+
+        private void SpellSaveDCNum_ValueChanged(object sender, EventArgs e)
+        {
+            if (SpellSaveDCNum.Value > 20)
+            {
+                SpellSaveDCNum.Value = 20;
             }
         }
     }
