@@ -88,6 +88,10 @@
             this.ClericCantrips3 = new System.Windows.Forms.ComboBox();
             this.ClericL1_1 = new System.Windows.Forms.ComboBox();
             this.ClericL1_2 = new System.Windows.Forms.ComboBox();
+            this.DruidCantrips = new System.Windows.Forms.ComboBox();
+            this.DruidCantrips2 = new System.Windows.Forms.ComboBox();
+            this.DruidL1_1 = new System.Windows.Forms.ComboBox();
+            this.DruidL1_2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ACNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
@@ -454,6 +458,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.DruidL1_2);
+            this.groupBox1.Controls.Add(this.DruidL1_1);
+            this.groupBox1.Controls.Add(this.DruidCantrips2);
+            this.groupBox1.Controls.Add(this.DruidCantrips);
             this.groupBox1.Controls.Add(this.ClericL1_2);
             this.groupBox1.Controls.Add(this.ClericL1_1);
             this.groupBox1.Controls.Add(this.ClericCantrips3);
@@ -769,6 +777,90 @@
             this.ClericL1_2.Size = new System.Drawing.Size(224, 24);
             this.ClericL1_2.TabIndex = 98;
             // 
+            // DruidCantrips
+            // 
+            this.DruidCantrips.FormattingEnabled = true;
+            this.DruidCantrips.Items.AddRange(new object[] {
+            "Druidcraft",
+            "Guidance",
+            "Mending",
+            "Poison Spray",
+            "Produce Flame",
+            "Resistance",
+            "Shillelagh",
+            "Thorn Whip"});
+            this.DruidCantrips.Location = new System.Drawing.Point(23, 78);
+            this.DruidCantrips.Name = "DruidCantrips";
+            this.DruidCantrips.Size = new System.Drawing.Size(224, 24);
+            this.DruidCantrips.TabIndex = 99;
+            // 
+            // DruidCantrips2
+            // 
+            this.DruidCantrips2.FormattingEnabled = true;
+            this.DruidCantrips2.Items.AddRange(new object[] {
+            "Druidcraft",
+            "Guidance",
+            "Mending",
+            "Poison Spray",
+            "Produce Flame",
+            "Resistance",
+            "Shillelagh",
+            "Thorn Whip"});
+            this.DruidCantrips2.Location = new System.Drawing.Point(23, 108);
+            this.DruidCantrips2.Name = "DruidCantrips2";
+            this.DruidCantrips2.Size = new System.Drawing.Size(224, 24);
+            this.DruidCantrips2.TabIndex = 100;
+            // 
+            // DruidL1_1
+            // 
+            this.DruidL1_1.FormattingEnabled = true;
+            this.DruidL1_1.Items.AddRange(new object[] {
+            "Animal Friendship",
+            "Charm Person",
+            "Create or Destroy Water",
+            "Cure Wounds",
+            "Detect Magic",
+            "Detect Poison and Disease",
+            "Entangle",
+            "Faerie Fire",
+            "Fog Cloud",
+            "Goodberry",
+            "Healing Word",
+            "Jump",
+            "Longstrider",
+            "Purify Food and Water",
+            "Speak with Animals",
+            "Thunderwave"});
+            this.DruidL1_1.Location = new System.Drawing.Point(350, 78);
+            this.DruidL1_1.Name = "DruidL1_1";
+            this.DruidL1_1.Size = new System.Drawing.Size(224, 24);
+            this.DruidL1_1.TabIndex = 101;
+            // 
+            // DruidL1_2
+            // 
+            this.DruidL1_2.FormattingEnabled = true;
+            this.DruidL1_2.Items.AddRange(new object[] {
+            "Animal Friendship",
+            "Charm Person",
+            "Create or Destroy Water",
+            "Cure Wounds",
+            "Detect Magic",
+            "Detect Poison and Disease",
+            "Entangle",
+            "Faerie Fire",
+            "Fog Cloud",
+            "Goodberry",
+            "Healing Word",
+            "Jump",
+            "Longstrider",
+            "Purify Food and Water",
+            "Speak with Animals",
+            "Thunderwave"});
+            this.DruidL1_2.Location = new System.Drawing.Point(350, 108);
+            this.DruidL1_2.Name = "DruidL1_2";
+            this.DruidL1_2.Size = new System.Drawing.Size(224, 24);
+            this.DruidL1_2.TabIndex = 102;
+            // 
             // MagicCasterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -881,5 +973,9 @@
         private System.Windows.Forms.ComboBox ClericCantrips;
         private System.Windows.Forms.ComboBox ClericL1_2;
         private System.Windows.Forms.ComboBox ClericL1_1;
+        private System.Windows.Forms.ComboBox DruidCantrips2;
+        private System.Windows.Forms.ComboBox DruidCantrips;
+        private System.Windows.Forms.ComboBox DruidL1_2;
+        private System.Windows.Forms.ComboBox DruidL1_1;
     }
 }

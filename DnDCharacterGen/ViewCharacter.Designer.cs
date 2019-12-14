@@ -53,9 +53,9 @@
             // 
             // closeBtn
             // 
-            this.closeBtn.Location = new System.Drawing.Point(245, 24);
+            this.closeBtn.Location = new System.Drawing.Point(137, 13);
             this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(75, 23);
+            this.closeBtn.Size = new System.Drawing.Size(75, 36);
             this.closeBtn.TabIndex = 2;
             this.closeBtn.Text = "Close";
             this.closeBtn.UseVisualStyleBackColor = true;

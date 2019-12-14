@@ -27,6 +27,10 @@ namespace DnDCharacterGen
             ClericCantrips3.Hide();
             ClericL1_1.Hide();
             ClericL1_2.Hide();
+            DruidCantrips.Hide();
+            DruidCantrips2.Hide();
+            DruidL1_1.Hide();
+            DruidL1_2.Hide();
             
             if (dndClass=="Bard")
             {
@@ -49,6 +53,15 @@ namespace DnDCharacterGen
                 HitDiceBox.Text = "1d8";
                 otherInfoLbl.Text = "Start with Spellcasting. Divine Domain: Choose a domain linked to your Deity which grants domain spells and " +
                     "other features";
+                SpellSaveDCINFO.Text = "8 + Proficiency Modifier + Wisdom Modifier";
+            } else if (dndClass == "Druid")
+            {
+                DruidCantrips.Show();
+                DruidCantrips2.Show();
+                DruidL1_1.Show();
+                DruidL1_2.Show();
+                HitDiceBox.Text = "1d8";
+                otherInfoLbl.Text = "Start with Spellcasting. You know Druidic the secret Language of the Druids.";
                 SpellSaveDCINFO.Text = "8 + Proficiency Modifier + Wisdom Modifier";
             }
         }
