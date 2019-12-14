@@ -74,6 +74,14 @@
             this.SaveBtnMagic = new System.Windows.Forms.Button();
             this.CharacterName = new System.Windows.Forms.TextBox();
             this.CharNameLbl = new System.Windows.Forms.Label();
+            this.BardCantrips = new System.Windows.Forms.ComboBox();
+            this.BardCantrips2 = new System.Windows.Forms.ComboBox();
+            this.BardL1_1 = new System.Windows.Forms.ComboBox();
+            this.BardL1_2 = new System.Windows.Forms.ComboBox();
+            this.SpellSaveDC = new System.Windows.Forms.Label();
+            this.SpellSaveDCNum = new System.Windows.Forms.NumericUpDown();
+            this.SpellAttkModNum = new System.Windows.Forms.NumericUpDown();
+            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ACNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
@@ -84,6 +92,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SpellSaveDCNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpellAttkModNum)).BeginInit();
             this.SuspendLayout();
             // 
             // ChaLabel
@@ -194,7 +204,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(27, 32);
+            this.button1.Location = new System.Drawing.Point(27, 23);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 68;
@@ -213,7 +223,7 @@
             // HPLabel
             // 
             this.HPLabel.AutoSize = true;
-            this.HPLabel.Location = new System.Drawing.Point(689, 189);
+            this.HPLabel.Location = new System.Drawing.Point(740, 186);
             this.HPLabel.Name = "HPLabel";
             this.HPLabel.Size = new System.Drawing.Size(0, 17);
             this.HPLabel.TabIndex = 66;
@@ -221,14 +231,14 @@
             // ACLabel
             // 
             this.ACLabel.AutoSize = true;
-            this.ACLabel.Location = new System.Drawing.Point(689, 155);
+            this.ACLabel.Location = new System.Drawing.Point(740, 152);
             this.ACLabel.Name = "ACLabel";
             this.ACLabel.Size = new System.Drawing.Size(0, 17);
             this.ACLabel.TabIndex = 65;
             // 
             // HitDiceBox
             // 
-            this.HitDiceBox.Location = new System.Drawing.Point(579, 214);
+            this.HitDiceBox.Location = new System.Drawing.Point(634, 211);
             this.HitDiceBox.Name = "HitDiceBox";
             this.HitDiceBox.Size = new System.Drawing.Size(100, 22);
             this.HitDiceBox.TabIndex = 64;
@@ -254,7 +264,7 @@
             // 
             // numericUpDown8
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(583, 182);
+            this.numericUpDown8.Location = new System.Drawing.Point(634, 179);
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(79, 22);
             this.numericUpDown8.TabIndex = 61;
@@ -270,7 +280,7 @@
             // 
             // ACNumeric
             // 
-            this.ACNumeric.Location = new System.Drawing.Point(583, 155);
+            this.ACNumeric.Location = new System.Drawing.Point(634, 152);
             this.ACNumeric.Name = "ACNumeric";
             this.ACNumeric.Size = new System.Drawing.Size(79, 22);
             this.ACNumeric.TabIndex = 59;
@@ -410,7 +420,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(6, 15);
+            this.label12.Location = new System.Drawing.Point(6, 18);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(87, 29);
             this.label12.TabIndex = 82;
@@ -420,7 +430,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 47);
+            this.label13.Location = new System.Drawing.Point(6, 50);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(93, 25);
             this.label13.TabIndex = 83;
@@ -430,7 +440,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(345, 47);
+            this.label14.Location = new System.Drawing.Point(345, 50);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(82, 25);
             this.label14.TabIndex = 84;
@@ -438,12 +448,16 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.BardL1_2);
+            this.groupBox1.Controls.Add(this.BardL1_1);
+            this.groupBox1.Controls.Add(this.BardCantrips2);
+            this.groupBox1.Controls.Add(this.BardCantrips);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Location = new System.Drawing.Point(518, 299);
+            this.groupBox1.Location = new System.Drawing.Point(518, 252);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(678, 182);
+            this.groupBox1.Size = new System.Drawing.Size(678, 229);
             this.groupBox1.TabIndex = 85;
             this.groupBox1.TabStop = false;
             // 
@@ -482,7 +496,7 @@
             // 
             // SaveBtnMagic
             // 
-            this.SaveBtnMagic.Location = new System.Drawing.Point(27, 66);
+            this.SaveBtnMagic.Location = new System.Drawing.Point(27, 57);
             this.SaveBtnMagic.Name = "SaveBtnMagic";
             this.SaveBtnMagic.Size = new System.Drawing.Size(75, 23);
             this.SaveBtnMagic.TabIndex = 87;
@@ -506,11 +520,149 @@
             this.CharNameLbl.TabIndex = 88;
             this.CharNameLbl.Text = "Character Name";
             // 
+            // BardCantrips
+            // 
+            this.BardCantrips.FormattingEnabled = true;
+            this.BardCantrips.Items.AddRange(new object[] {
+            "Blade Ward",
+            "Dancing Lights",
+            "Friends",
+            "Lights",
+            "Mage Hand",
+            "Mending",
+            "Message",
+            "Minor Illusion",
+            "Prestidigitation",
+            "True Strike",
+            "Vicious Mockery"});
+            this.BardCantrips.Location = new System.Drawing.Point(23, 78);
+            this.BardCantrips.Name = "BardCantrips";
+            this.BardCantrips.Size = new System.Drawing.Size(224, 24);
+            this.BardCantrips.TabIndex = 90;
+            // 
+            // BardCantrips2
+            // 
+            this.BardCantrips2.FormattingEnabled = true;
+            this.BardCantrips2.Items.AddRange(new object[] {
+            "Blade Ward",
+            "Dancing Lights",
+            "Friends",
+            "Lights",
+            "Mage Hand",
+            "Mending",
+            "Message",
+            "Minor Illusion",
+            "Prestidigitation",
+            "True Strike",
+            "Vicious Mockery"});
+            this.BardCantrips2.Location = new System.Drawing.Point(23, 108);
+            this.BardCantrips2.Name = "BardCantrips2";
+            this.BardCantrips2.Size = new System.Drawing.Size(224, 24);
+            this.BardCantrips2.TabIndex = 91;
+            // 
+            // BardL1_1
+            // 
+            this.BardL1_1.FormattingEnabled = true;
+            this.BardL1_1.Items.AddRange(new object[] {
+            "Animal Friendship",
+            "Bane",
+            "Charm Person",
+            "Comprehend Languages",
+            "Cure Wounds",
+            "Detect Magic",
+            "Disguise Self",
+            "Dissonant Whispers",
+            "Faerie Fire",
+            "Feather Fall",
+            "Healing Word",
+            "Heroism",
+            "Identify",
+            "Illusory Script",
+            "Longstrider",
+            "Silent Image",
+            "Sleep",
+            "Speak with Animals",
+            "Tasha\'s Hideous Laughter",
+            "Thunderwave",
+            "Unseen Servant"});
+            this.BardL1_1.Location = new System.Drawing.Point(350, 78);
+            this.BardL1_1.Name = "BardL1_1";
+            this.BardL1_1.Size = new System.Drawing.Size(224, 24);
+            this.BardL1_1.TabIndex = 92;
+            // 
+            // BardL1_2
+            // 
+            this.BardL1_2.FormattingEnabled = true;
+            this.BardL1_2.Items.AddRange(new object[] {
+            "Animal Friendship",
+            "Bane",
+            "Charm Person",
+            "Comprehend Languages",
+            "Cure Wounds",
+            "Detect Magic",
+            "Disguise Self",
+            "Dissonant Whispers",
+            "Faerie Fire",
+            "Feather Fall",
+            "Healing Word",
+            "Heroism",
+            "Identify",
+            "Illusory Script",
+            "Longstrider",
+            "Silent Image",
+            "Sleep",
+            "Speak with Animals",
+            "Tasha\'s Hideous Laughter",
+            "Thunderwave",
+            "Unseen Servant"});
+            this.BardL1_2.Location = new System.Drawing.Point(350, 108);
+            this.BardL1_2.Name = "BardL1_2";
+            this.BardL1_2.Size = new System.Drawing.Size(224, 24);
+            this.BardL1_2.TabIndex = 93;
+            // 
+            // SpellSaveDC
+            // 
+            this.SpellSaveDC.AutoSize = true;
+            this.SpellSaveDC.Location = new System.Drawing.Point(865, 157);
+            this.SpellSaveDC.Name = "SpellSaveDC";
+            this.SpellSaveDC.Size = new System.Drawing.Size(98, 17);
+            this.SpellSaveDC.TabIndex = 94;
+            this.SpellSaveDC.Text = "Spell Save DC";
+            // 
+            // SpellSaveDCNum
+            // 
+            this.SpellSaveDCNum.Location = new System.Drawing.Point(1013, 155);
+            this.SpellSaveDCNum.Name = "SpellSaveDCNum";
+            this.SpellSaveDCNum.Size = new System.Drawing.Size(79, 22);
+            this.SpellSaveDCNum.TabIndex = 95;
+            this.SpellSaveDCNum.ValueChanged += new System.EventHandler(this.ACNumeric_ValueChanged);
+            // 
+            // SpellAttkModNum
+            // 
+            this.SpellAttkModNum.Location = new System.Drawing.Point(1013, 187);
+            this.SpellAttkModNum.Name = "SpellAttkModNum";
+            this.SpellAttkModNum.Size = new System.Drawing.Size(79, 22);
+            this.SpellAttkModNum.TabIndex = 97;
+            this.SpellAttkModNum.ValueChanged += new System.EventHandler(this.numericUpDown7_ValueChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(865, 189);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(136, 17);
+            this.label15.TabIndex = 96;
+            this.label15.Text = "Spell Attack Modifier";
+            // 
             // MagicCasterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1285, 508);
+            this.Controls.Add(this.SpellAttkModNum);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.SpellSaveDCNum);
+            this.Controls.Add(this.SpellSaveDC);
             this.Controls.Add(this.CharacterName);
             this.Controls.Add(this.CharNameLbl);
             this.Controls.Add(this.SaveBtnMagic);
@@ -544,6 +696,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SpellSaveDCNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpellAttkModNum)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -597,5 +751,13 @@
         private System.Windows.Forms.Button SaveBtnMagic;
         private System.Windows.Forms.TextBox CharacterName;
         private System.Windows.Forms.Label CharNameLbl;
+        private System.Windows.Forms.ComboBox BardCantrips;
+        private System.Windows.Forms.ComboBox BardL1_2;
+        private System.Windows.Forms.ComboBox BardL1_1;
+        private System.Windows.Forms.ComboBox BardCantrips2;
+        private System.Windows.Forms.Label SpellSaveDC;
+        private System.Windows.Forms.NumericUpDown SpellSaveDCNum;
+        private System.Windows.Forms.NumericUpDown SpellAttkModNum;
+        private System.Windows.Forms.Label label15;
     }
 }

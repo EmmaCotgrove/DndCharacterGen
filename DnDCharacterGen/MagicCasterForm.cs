@@ -18,6 +18,19 @@ namespace DnDCharacterGen
             InitializeComponent();
             ClassLabel.Text = dndClass;
             RaceLabel.Text = dndRace;
+            BardCantrips.Hide();
+            BardCantrips2.Hide();
+            BardL1_1.Hide();
+            BardL1_2.Hide();
+            
+            if (dndClass=="Bard")
+            {
+                BardL1_2.Show();
+                BardL1_1.Show();
+                BardCantrips.Show();
+                BardCantrips2.Show();
+                HitDiceBox.Text = "1d8";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,11 +115,28 @@ namespace DnDCharacterGen
 
                     sw.Write($"AC: {ACNumeric.Value}\n");
                     sw.Write($"Hit Points: {numericUpDown8.Value}\n");
-                    sw.Write($"Hit Dice: {HitDiceBox.Text}\n");
+                    sw.Write($"Hit Dice: {HitDiceBox.Text}\n\n");
+
+                    sw.Write($"Spell Caster Stats:\n");
+                    sw.Write($"Spell Save DC: {SpellSaveDCNum}\n Spell Attack Modifier: {SpellAttkModNum}");
+                    sw.Write("Spell List\n");
+                    if (ClassLabel.Text=="Bard")
+                    {
+                        sw.Write($"Cantrips: \n{BardCantrips.Text}\n{BardCantrips2.Text}\n");
+                        sw.Write($"Level 1: \n{BardL1_1.Text}\n{BardL1_2.Text}\n");
+                    }
 
                     sw.Write($"Other Information\n {otherInfoLbl.Text}");
                     sw.Dispose();
                 }
+            }
+        }
+
+        private void numericUpDown7_ValueChanged(object sender, EventArgs e)
+        {
+            if (SpellAttkModNum.Value > 10)
+            {
+                SpellAttkModNum.Value = 10;
             }
         }
     }

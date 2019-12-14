@@ -1,0 +1,24 @@
+Character name: Cletus
+Race: Dragonborn
+Class: Bard
+
+Strength: 13, Modifier: +1
+Dexterity: 14, Modifier: +2
+Constitution: 14, Modifier: +2
+Wisdown: 12, Modifier: +1
+Intelligence: 14, Modifier: +2
+Charisma: 7, Modifier: -1
+
+AC: 14
+Hit Points: 25
+Hit Dice: 
+
+Spell List
+Cantrips: 
+System.Windows.Forms.ComboBox, Items.Count: 11
+System.Windows.Forms.ComboBox, Items.Count: 11
+Level 1: 
+System.Windows.Forms.ComboBox, Items.Count: 21
+System.Windows.Forms.ComboBox, Items.Count: 21
+Other Information
+ 
