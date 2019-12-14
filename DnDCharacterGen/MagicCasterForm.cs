@@ -41,6 +41,11 @@ namespace DnDCharacterGen
             SorcererL1_2.Hide();
             WarlockCantrips.Hide();
             WarlockCantrips2.Hide();
+            WizardCantrips.Hide();
+            WizardCantrips2.Hide();
+            WizardCantrips3.Hide();
+            WizardL1_1.Hide();
+            WizardL1_2.Hide();
             
             if (dndClass=="Bard")
             {
@@ -111,6 +116,17 @@ namespace DnDCharacterGen
                 otherInfoLbl.Text = "Otherwordly Patron: Choose who you strike a bargain with to gain additional features: Archfey, Fiend or " +
                     "the Great Old One. Pact Magic.";
                 SpellSaveDCINFO.Text = "8 + Proficiency Modifier + Charisma Modifier";
+            } else if (dndClass == "Wizard")
+            {
+                WizardCantrips.Show();
+                WizardCantrips2.Show();
+                WizardCantrips3.Show();
+                WizardL1_1.Show();
+                WizardL1_2.Show();
+                HitDiceBox.Text = "1d6";
+                otherInfoLbl.Text = "Spellcasting. Arcane Recovery: Once per day when you finish a short rest choose expended spell slots to recover" +
+                    "this is equal to or less than half the wizard level and none can be of 6th level or higher.";
+                SpellSaveDCINFO.Text = "8 + Proficiency Modifier + Intelligence Modifier";
             }
         }
 

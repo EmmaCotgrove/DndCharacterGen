@@ -104,6 +104,11 @@
             this.WarlockCantrips2 = new System.Windows.Forms.ComboBox();
             this.WarlockL1_1 = new System.Windows.Forms.ComboBox();
             this.WarlockL1_2 = new System.Windows.Forms.ComboBox();
+            this.WizardCantrips = new System.Windows.Forms.ComboBox();
+            this.WizardCantrips2 = new System.Windows.Forms.ComboBox();
+            this.WizardCantrips3 = new System.Windows.Forms.ComboBox();
+            this.WizardL1_1 = new System.Windows.Forms.ComboBox();
+            this.WizardL1_2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ACNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
@@ -470,6 +475,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.WizardL1_2);
+            this.groupBox1.Controls.Add(this.WizardL1_1);
+            this.groupBox1.Controls.Add(this.WizardCantrips3);
+            this.groupBox1.Controls.Add(this.WizardCantrips2);
+            this.groupBox1.Controls.Add(this.WizardCantrips);
             this.groupBox1.Controls.Add(this.WarlockL1_2);
             this.groupBox1.Controls.Add(this.WarlockL1_1);
             this.groupBox1.Controls.Add(this.WarlockCantrips2);
@@ -1179,6 +1189,159 @@
             this.WarlockL1_2.Size = new System.Drawing.Size(224, 24);
             this.WarlockL1_2.TabIndex = 114;
             // 
+            // WizardCantrips
+            // 
+            this.WizardCantrips.FormattingEnabled = true;
+            this.WizardCantrips.Items.AddRange(new object[] {
+            "Acid Splash",
+            "Blade Ward",
+            "Chill Touch",
+            "Dancing Lights",
+            "Fire Bolt",
+            "Friends ",
+            "Light",
+            "Mage Hand",
+            "Mending",
+            "Message",
+            "Minor Illusion",
+            "Poison Spray",
+            "Prestidigitation",
+            "Ray of Frost",
+            "Shocking Grasp",
+            "True Strike"});
+            this.WizardCantrips.Location = new System.Drawing.Point(23, 78);
+            this.WizardCantrips.Name = "WizardCantrips";
+            this.WizardCantrips.Size = new System.Drawing.Size(224, 24);
+            this.WizardCantrips.TabIndex = 115;
+            // 
+            // WizardCantrips2
+            // 
+            this.WizardCantrips2.FormattingEnabled = true;
+            this.WizardCantrips2.Items.AddRange(new object[] {
+            "Acid Splash",
+            "Blade Ward",
+            "Chill Touch",
+            "Dancing Lights",
+            "Fire Bolt",
+            "Friends ",
+            "Light",
+            "Mage Hand",
+            "Mending",
+            "Message",
+            "Minor Illusion",
+            "Poison Spray",
+            "Prestidigitation",
+            "Ray of Frost",
+            "Shocking Grasp",
+            "True Strike"});
+            this.WizardCantrips2.Location = new System.Drawing.Point(23, 108);
+            this.WizardCantrips2.Name = "WizardCantrips2";
+            this.WizardCantrips2.Size = new System.Drawing.Size(224, 24);
+            this.WizardCantrips2.TabIndex = 116;
+            // 
+            // WizardCantrips3
+            // 
+            this.WizardCantrips3.FormattingEnabled = true;
+            this.WizardCantrips3.Items.AddRange(new object[] {
+            "Acid Splash",
+            "Blade Ward",
+            "Chill Touch",
+            "Dancing Lights",
+            "Fire Bolt",
+            "Friends ",
+            "Light",
+            "Mage Hand",
+            "Mending",
+            "Message",
+            "Minor Illusion",
+            "Poison Spray",
+            "Prestidigitation",
+            "Ray of Frost",
+            "Shocking Grasp",
+            "True Strike"});
+            this.WizardCantrips3.Location = new System.Drawing.Point(23, 138);
+            this.WizardCantrips3.Name = "WizardCantrips3";
+            this.WizardCantrips3.Size = new System.Drawing.Size(224, 24);
+            this.WizardCantrips3.TabIndex = 117;
+            // 
+            // WizardL1_1
+            // 
+            this.WizardL1_1.FormattingEnabled = true;
+            this.WizardL1_1.Items.AddRange(new object[] {
+            "Alarm",
+            "Burning Hands",
+            "Charm Person",
+            "Chromatic Orb",
+            "Colour Spray",
+            "Comprehend Languages",
+            "Detect Magic",
+            "Disguise Self",
+            "Expeditious Retreat",
+            "False Life",
+            "Feather Fall",
+            "Find Familiar",
+            "Fog Cloud",
+            "Grease",
+            "Identify",
+            "Illusory Script",
+            "Jump",
+            "Longstrider",
+            "Mage Armour",
+            "Magic Missile",
+            "Protection from Evil and Good",
+            "Ray of Sickness",
+            "Shield",
+            "Silent Image",
+            "Sleep",
+            "Tasha\'s Hideous Laughter",
+            "Tenser\'s Floating Disk",
+            "Thunderwave",
+            "Unseen Servant",
+            "Witch Bolt"});
+            this.WizardL1_1.Location = new System.Drawing.Point(350, 78);
+            this.WizardL1_1.Name = "WizardL1_1";
+            this.WizardL1_1.Size = new System.Drawing.Size(224, 24);
+            this.WizardL1_1.TabIndex = 118;
+            // 
+            // WizardL1_2
+            // 
+            this.WizardL1_2.FormattingEnabled = true;
+            this.WizardL1_2.Items.AddRange(new object[] {
+            "Alarm",
+            "Burning Hands",
+            "Charm Person",
+            "Chromatic Orb",
+            "Colour Spray",
+            "Comprehend Languages",
+            "Detect Magic",
+            "Disguise Self",
+            "Expeditious Retreat",
+            "False Life",
+            "Feather Fall",
+            "Find Familiar",
+            "Fog Cloud",
+            "Grease",
+            "Identify",
+            "Illusory Script",
+            "Jump",
+            "Longstrider",
+            "Mage Armour",
+            "Magic Missile",
+            "Protection from Evil and Good",
+            "Ray of Sickness",
+            "Shield",
+            "Silent Image",
+            "Sleep",
+            "Tasha\'s Hideous Laughter",
+            "Tenser\'s Floating Disk",
+            "Thunderwave",
+            "Unseen Servant",
+            "Witch Bolt"});
+            this.WizardL1_2.Location = new System.Drawing.Point(350, 108);
+            this.WizardL1_2.Name = "WizardL1_2";
+            this.WizardL1_2.Size = new System.Drawing.Size(224, 24);
+            this.WizardL1_2.TabIndex = 119;
+            // 
             // MagicCasterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1307,5 +1470,10 @@
         private System.Windows.Forms.ComboBox WarlockCantrips;
         private System.Windows.Forms.ComboBox WarlockL1_2;
         private System.Windows.Forms.ComboBox WarlockL1_1;
+        private System.Windows.Forms.ComboBox WizardCantrips3;
+        private System.Windows.Forms.ComboBox WizardCantrips2;
+        private System.Windows.Forms.ComboBox WizardCantrips;
+        private System.Windows.Forms.ComboBox WizardL1_2;
+        private System.Windows.Forms.ComboBox WizardL1_1;
     }
 }
