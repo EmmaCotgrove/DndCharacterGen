@@ -1,6 +1,4 @@
 Race: Dwarf
-
-Race: Dwarf
 Class: Barbarian
 
 Strength: 12, Modifier: +1

@@ -89,7 +89,7 @@ namespace DnDCharacterGen
                 string path = sfd.FileName;
                 using (StreamWriter sw = new StreamWriter(path))
                 {
-                    sw.WriteLine($"Race: {RaceLabel.Text}\n");
+                    sw.Write($"Character name: {CharacterName.Text}\n");
                     sw.Write($"Race: {RaceLabel.Text}\n");
                     sw.Write($"Class: {ClassLabel.Text}\n\n");
 

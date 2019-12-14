@@ -68,6 +68,8 @@
             this.ChaLabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.SaveBtnBasic = new System.Windows.Forms.Button();
+            this.CharNameLbl = new System.Windows.Forms.Label();
+            this.CharacterName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -202,7 +204,7 @@
             // 
             // ACNumeric
             // 
-            this.ACNumeric.Location = new System.Drawing.Point(596, 116);
+            this.ACNumeric.Location = new System.Drawing.Point(650, 153);
             this.ACNumeric.Name = "ACNumeric";
             this.ACNumeric.Size = new System.Drawing.Size(79, 22);
             this.ACNumeric.TabIndex = 15;
@@ -211,7 +213,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(528, 118);
+            this.label9.Location = new System.Drawing.Point(528, 155);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(26, 17);
             this.label9.TabIndex = 14;
@@ -219,7 +221,7 @@
             // 
             // numericUpDown8
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(596, 143);
+            this.numericUpDown8.Location = new System.Drawing.Point(650, 180);
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(79, 22);
             this.numericUpDown8.TabIndex = 17;
@@ -227,7 +229,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(528, 145);
+            this.label10.Location = new System.Drawing.Point(528, 182);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(68, 17);
             this.label10.TabIndex = 16;
@@ -246,7 +248,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(528, 175);
+            this.label11.Location = new System.Drawing.Point(528, 212);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(57, 17);
             this.label11.TabIndex = 20;
@@ -254,7 +256,7 @@
             // 
             // HitDiceBox
             // 
-            this.HitDiceBox.Location = new System.Drawing.Point(592, 175);
+            this.HitDiceBox.Location = new System.Drawing.Point(650, 212);
             this.HitDiceBox.Name = "HitDiceBox";
             this.HitDiceBox.Size = new System.Drawing.Size(100, 22);
             this.HitDiceBox.TabIndex = 21;
@@ -262,7 +264,7 @@
             // ACLabel
             // 
             this.ACLabel.AutoSize = true;
-            this.ACLabel.Location = new System.Drawing.Point(702, 116);
+            this.ACLabel.Location = new System.Drawing.Point(756, 153);
             this.ACLabel.Name = "ACLabel";
             this.ACLabel.Size = new System.Drawing.Size(0, 17);
             this.ACLabel.TabIndex = 27;
@@ -270,7 +272,7 @@
             // HPLabel
             // 
             this.HPLabel.AutoSize = true;
-            this.HPLabel.Location = new System.Drawing.Point(702, 150);
+            this.HPLabel.Location = new System.Drawing.Point(756, 187);
             this.HPLabel.Name = "HPLabel";
             this.HPLabel.Size = new System.Drawing.Size(0, 17);
             this.HPLabel.TabIndex = 28;
@@ -442,11 +444,29 @@
             this.SaveBtnBasic.UseVisualStyleBackColor = true;
             this.SaveBtnBasic.Click += new System.EventHandler(this.SaveBtnBasic_Click);
             // 
+            // CharNameLbl
+            // 
+            this.CharNameLbl.AutoSize = true;
+            this.CharNameLbl.Location = new System.Drawing.Point(531, 121);
+            this.CharNameLbl.Name = "CharNameLbl";
+            this.CharNameLbl.Size = new System.Drawing.Size(111, 17);
+            this.CharNameLbl.TabIndex = 46;
+            this.CharNameLbl.Text = "Character Name";
+            // 
+            // CharacterName
+            // 
+            this.CharacterName.Location = new System.Drawing.Point(649, 116);
+            this.CharacterName.Name = "CharacterName";
+            this.CharacterName.Size = new System.Drawing.Size(181, 22);
+            this.CharacterName.TabIndex = 47;
+            // 
             // BasicCreateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1324, 450);
+            this.Controls.Add(this.CharacterName);
+            this.Controls.Add(this.CharNameLbl);
             this.Controls.Add(this.SaveBtnBasic);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.RaceLabel);
@@ -523,5 +543,7 @@
         private System.Windows.Forms.Label ChaLabel;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button SaveBtnBasic;
+        private System.Windows.Forms.Label CharNameLbl;
+        private System.Windows.Forms.TextBox CharacterName;
     }
 }

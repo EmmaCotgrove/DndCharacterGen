@@ -1,0 +1,16 @@
+Character name: Donald the Brave
+Race: Dwarf
+Class: Fighter
+
+Strength: 13, Modifier: +1
+Dexterity: 16, Modifier: +3
+Constitution: 14, Modifier: +2
+Wisdown: 11, Modifier: +0
+Intelligence: 8, Modifier: -1
+Charisma: 9, Modifier: +0
+
+AC: 16
+Hit Points: 30
+Hit Dice: 1d10
+Other Information
+ Level 1: Second Wind: Bonus action to gain 1d10 HP back. Used once. Recharge on short/long rest

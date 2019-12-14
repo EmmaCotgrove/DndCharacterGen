@@ -72,6 +72,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.SaveBtnMagic = new System.Windows.Forms.Button();
+            this.CharacterName = new System.Windows.Forms.TextBox();
+            this.CharNameLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ACNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
@@ -205,13 +207,13 @@
             this.otherInfoLbl.Location = new System.Drawing.Point(26, 322);
             this.otherInfoLbl.Multiline = true;
             this.otherInfoLbl.Name = "otherInfoLbl";
-            this.otherInfoLbl.Size = new System.Drawing.Size(462, 83);
+            this.otherInfoLbl.Size = new System.Drawing.Size(462, 159);
             this.otherInfoLbl.TabIndex = 67;
             // 
             // HPLabel
             // 
             this.HPLabel.AutoSize = true;
-            this.HPLabel.Location = new System.Drawing.Point(689, 152);
+            this.HPLabel.Location = new System.Drawing.Point(689, 189);
             this.HPLabel.Name = "HPLabel";
             this.HPLabel.Size = new System.Drawing.Size(0, 17);
             this.HPLabel.TabIndex = 66;
@@ -219,14 +221,14 @@
             // ACLabel
             // 
             this.ACLabel.AutoSize = true;
-            this.ACLabel.Location = new System.Drawing.Point(689, 118);
+            this.ACLabel.Location = new System.Drawing.Point(689, 155);
             this.ACLabel.Name = "ACLabel";
             this.ACLabel.Size = new System.Drawing.Size(0, 17);
             this.ACLabel.TabIndex = 65;
             // 
             // HitDiceBox
             // 
-            this.HitDiceBox.Location = new System.Drawing.Point(579, 177);
+            this.HitDiceBox.Location = new System.Drawing.Point(579, 214);
             this.HitDiceBox.Name = "HitDiceBox";
             this.HitDiceBox.Size = new System.Drawing.Size(100, 22);
             this.HitDiceBox.TabIndex = 64;
@@ -234,7 +236,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(515, 177);
+            this.label11.Location = new System.Drawing.Point(515, 214);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(57, 17);
             this.label11.TabIndex = 63;
@@ -252,7 +254,7 @@
             // 
             // numericUpDown8
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(583, 145);
+            this.numericUpDown8.Location = new System.Drawing.Point(583, 182);
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(79, 22);
             this.numericUpDown8.TabIndex = 61;
@@ -260,7 +262,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(515, 147);
+            this.label10.Location = new System.Drawing.Point(515, 184);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(68, 17);
             this.label10.TabIndex = 60;
@@ -268,7 +270,7 @@
             // 
             // ACNumeric
             // 
-            this.ACNumeric.Location = new System.Drawing.Point(583, 118);
+            this.ACNumeric.Location = new System.Drawing.Point(583, 155);
             this.ACNumeric.Name = "ACNumeric";
             this.ACNumeric.Size = new System.Drawing.Size(79, 22);
             this.ACNumeric.TabIndex = 59;
@@ -277,7 +279,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(515, 120);
+            this.label9.Location = new System.Drawing.Point(515, 157);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(26, 17);
             this.label9.TabIndex = 58;
@@ -439,7 +441,7 @@
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Location = new System.Drawing.Point(518, 223);
+            this.groupBox1.Location = new System.Drawing.Point(518, 299);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(678, 182);
             this.groupBox1.TabIndex = 85;
@@ -488,11 +490,29 @@
             this.SaveBtnMagic.UseVisualStyleBackColor = true;
             this.SaveBtnMagic.Click += new System.EventHandler(this.SaveBtnMagic_Click);
             // 
+            // CharacterName
+            // 
+            this.CharacterName.Location = new System.Drawing.Point(632, 119);
+            this.CharacterName.Name = "CharacterName";
+            this.CharacterName.Size = new System.Drawing.Size(181, 22);
+            this.CharacterName.TabIndex = 89;
+            // 
+            // CharNameLbl
+            // 
+            this.CharNameLbl.AutoSize = true;
+            this.CharNameLbl.Location = new System.Drawing.Point(514, 124);
+            this.CharNameLbl.Name = "CharNameLbl";
+            this.CharNameLbl.Size = new System.Drawing.Size(111, 17);
+            this.CharNameLbl.TabIndex = 88;
+            this.CharNameLbl.Text = "Character Name";
+            // 
             // MagicCasterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1285, 430);
+            this.ClientSize = new System.Drawing.Size(1285, 508);
+            this.Controls.Add(this.CharacterName);
+            this.Controls.Add(this.CharNameLbl);
             this.Controls.Add(this.SaveBtnMagic);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -575,5 +595,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button SaveBtnMagic;
+        private System.Windows.Forms.TextBox CharacterName;
+        private System.Windows.Forms.Label CharNameLbl;
     }
 }
