@@ -61,7 +61,22 @@ namespace DnDCharacterGen
                 DruidL1_1.Show();
                 DruidL1_2.Show();
                 HitDiceBox.Text = "1d8";
-                otherInfoLbl.Text = "Start with Spellcasting. You know Druidic the secret Language of the Druids.";
+                otherInfoLbl.Text = "Start with Spellcasting. You know Druidic the secret Language of the Druids";
+                SpellSaveDCINFO.Text = "8 + Proficiency Modifier + Wisdom Modifier";
+            } else if (dndClass == "Paladin")
+            {
+                HitDiceBox.Text = "1d10";
+                otherInfoLbl.Text = "Divine Sense: Until the end of your net turn you know the location of any Fiend, Celestial or Undead." +
+                    " Lay on Hands You have a pool of healing power which can be used to restore a toal of 5x Paladin Level." +
+                    "As an action you can touch a creature to restore a number of hit points up to the max remaining. No spells at Level 1";
+                SpellSaveDCINFO.Text = "8 + Proficiency Modifier + Charisma Modifier";
+            } else if (dndClass == "Ranger")
+            {
+                HitDiceBox.Text = "1d10";
+                otherInfoLbl.Text = "Favoured Enemy: Choose a type of favoured enemy to which you have advantage on Wisdom checks to track." +
+                    "You also learn the language of your favoured enemy. Natural Explorer: Your group can't be lost, You always remain alert to danger" +
+                    "When foraging you gain twice as much. While tracking creatures you know the exact number and sizes. Difficult terrain does not " +
+                    "slow the group. No spells at Level 1";
                 SpellSaveDCINFO.Text = "8 + Proficiency Modifier + Wisdom Modifier";
             }
         }
