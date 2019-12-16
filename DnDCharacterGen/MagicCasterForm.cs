@@ -220,7 +220,31 @@ namespace DnDCharacterGen
                     if (ClassLabel.Text=="Bard")
                     {
                         sw.Write($"Cantrips: \n{BardCantrips.Text}\n{BardCantrips2.Text}\n");
-                        sw.Write($"Level 1: \n{BardL1_1.Text}\n{BardL1_2.Text}\n\n");
+                        sw.Write($"Level 1: \n{BardL1_1.Text}\n{BardL1_2.Text}\n{BardL1_3.Text}\n{BardL1_4.Text}\n\n");
+                    } else if (ClassLabel.Text == "Druid")
+                    {
+                        sw.Write($"Cantrips: \n{DruidCantrips.Text}\n{DruidCantrips2.Text}\n");
+                        sw.Write($"Level 1: \n{DruidL1_1.Text}\n{DruidL1_2.Text}\n\n");
+                    } else if (ClassLabel.Text == "Cleric")
+                    {
+                        sw.Write($"Cantrips: \n{ClericCantrips.Text}\n{ClericCantrips2.Text}\n{ClericCantrips3.Text}\n\n");
+                        sw.Write($"Level 1: \n{ClericL1_1.Text}\n{ClericL1_2.Text}\n\n");
+
+                    } else if (ClassLabel.Text == "Sorcerer")
+                    {
+                        sw.Write($"Cantrips: \n{SorcererCantrips.Text}\n{SorcererCantrips2.Text}\n{SorcererCantrips3.Text}\n{SorcererCantrips4.Text}\n\n");
+                        sw.Write($"Level 1: \n{SorcererL1_1.Text}\n{SorcererL1_2.Text}\n\n");
+
+                    } else if (ClassLabel.Text == "Warlock")
+                    {
+                        sw.Write($"Cantrips: \n{WarlockCantrips.Text}\n{WarlockCantrips2.Text}\n");
+                        sw.Write($"Level 1: \n{WarlockL1_1.Text}\n{WarlockL1_2.Text}\n\n");
+
+                    } else if (ClassLabel.Text == "Wizard")
+                    {
+                        sw.Write($"Cantrips: \n{WizardCantrips.Text}\n{WizardCantrips2.Text}\n{WizardCantrips3.Text}\n\n");
+                        sw.Write($"Level 1: \n{WizardL1_1.Text}\n{WizardL1_2.Text}\n\n");
+
                     }
 
                     sw.Write($"Other Information\n {otherInfoLbl.Text}");
